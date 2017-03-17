@@ -1,0 +1,33 @@
+badge {
+    padding: 5px;
+    color: #222;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+badge:before {
+    font: normal normal normal 16px/1 LineAwesome;
+    font-size: inherit;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    padding-right: 5px;
+}
+
+badge.yes:before,
+badge.true:before,
+badge.positive:before {
+    color: #00c857;
+    content: "\f17b";
+}
+
+badge.no:before,
+badge.false:before,
+badge.negative:before {
+    color: #ff0000;
+    content: "\f191";
+}

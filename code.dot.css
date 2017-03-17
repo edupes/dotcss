@@ -1,0 +1,8 @@
+code {
+	padding: 10px;
+	width: calc(100% - 20px);
+	background: #444;
+	color: white;
+	display: block;
+	overflow: scroll;
+}

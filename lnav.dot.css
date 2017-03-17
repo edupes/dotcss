@@ -1,0 +1,36 @@
+@media (min-width: 500px) {
+	lnav {
+		display: block;
+		height: 100%;
+		float: left;
+		width: 200px;
+		border-right: 1px solid #eee;
+	}
+
+	lnav a {
+		padding: 10px;
+		display: block;
+	}
+
+	.lnav section {
+		width: calc(100% - 220px);
+		clear: none;
+		margin-left: 200px;
+	}
+}
+
+@media (max-width: 500px) {
+	lnav {
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: scroll;
+	}
+
+	lnav a {
+		padding: 15px;
+		display: block;
+		border-bottom: 1px solid #eee;
+	}
+
+}

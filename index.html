@@ -1,0 +1,140 @@
+<head>
+    <script src="dot.js"></script>
+
+    <dc-module module="core"></dc-module>
+    <dc-module module="icons"></dc-module>
+
+    <dc-module module="card"></dc-module>
+    <dc-module module="action"></dc-module>
+    <dc-module module="code"></dc-module>
+    <dc-module module="cover"></dc-module>
+    <dc-module module="input"></dc-module>
+    <dc-module module="lnav"></dc-module>
+    <dc-module module="section"></dc-module>
+    <dc-module module="list"></dc-module>
+    <dc-module module="header"></dc-module>
+    <dc-module module="badge"></dc-module>
+
+    <dc-module module="shop"></dc-module>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<nav>
+    <div class="collapsed">
+        <a dc-link="general">General</a>
+        <a dc-link="components">Components</a>
+        <a dc-link="modules">Modules</a>
+        <a dc-link="about">About</a>
+        <a dc-link="cart">My Page</a>
+        <a dc-link="start">Start</a>
+    </div>
+    <h1>DOTcss</h1>
+</nav>
+
+<page dc-page="initial">
+    <div class="cover">
+        <header>
+            <h1>dotcss</h1>
+        </header>
+        <ul>
+            <li>fast</li>
+            <li>mobile friendly</li>
+            <li>module-based</li>
+            <li>routed</li>
+            <li>simple</li>
+            <li>data-binding</li>
+            <li>extendable</li>
+        </ul>
+        <a class="act fill bottom" dc-link="general">Get started</a>
+    </div>
+</page>
+
+<page dc-page="general">
+    <div class="card">
+        <h1>Welcome to DOTcss</h1>
+        <p>
+            DOTcss is a lightweight, only-use-what-you-need stylesheet
+        </p>
+        <a class="fill lref" dc-link="action1">Learn more</a>
+    </div>
+
+    <div class="card" dc-if="action1">
+        <h1>Mobile? Yes!</h1>
+        <p>
+            Acctually a big part of this stylesheet was written on a phone :)
+        </p>
+        <a class="act lref" dc-link="action2">Who is this dude?</a>
+    </div>
+</page>
+
+<page dc-page="components" class="lnav">
+    <lnav>
+        <a dc-tab-set="basic">Basic structure</a>
+        <a dc-tab-set="card">Card</a>
+        <a dc-tab-set="input">Input</a>
+    </lnav>
+    <section dc-tab="basic">
+        <h1>Basic site</h1>
+        <p>
+            To build up a basic site, you have to use this code
+        </p>
+        <code>
+            &lt;head&gt;<br>
+            &lt;/head&gt;
+        </code>
+    </section>
+    <section dc-tab="card">
+        <h1>Card</h1>
+        <p>
+            To build up a basic site, you have to use this code
+        </p>
+        <code>
+            &lt;div class="card"&gt;<br>
+            &nbsp; &lt;h1&gt;Card title&lt/h1&gt;<br>
+            &nbsp; &lt;p&gt;<br>
+            &nbsp; &nbsp; Card text<br>
+            &nbsp; &lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code>
+        <div class="card">
+            <h1>Card title</h1>
+            <p>
+                Card text
+            </p>
+        </div>
+    </section>
+    <section dc-tab="input">
+        <h1>Inputs</h1>
+        <p>
+            Use these fields to input data
+        </p>
+        <code>
+            &lt;input type="text" dc-data="name" placeholder="Name"&gt;<br>
+            &lt;input type="number" dc-data="age" placeholder="Age"&gt;
+        </code>
+
+        <input type="text" class="dc-data" dc-data="person.name" placeholder="Name">
+        <input type="number" class="dc-data" dc-data="person.number" placeholder="Age">
+
+        <div class="dc-output" dc-data="person.name">***</div>
+    </section>
+</page>
+
+<page dc-page="start">
+    <section>
+        <h1>Start off with dotcss</h1>
+        <p>Paste this code</p>
+        <code>
+            &lt;script src="http://dotcdn.us/dotcss/dot.js"&gt;&lt;/script&gt;<br><br>
+            &lt;link rel="stylesheet" href="http://dotcdn.us/dotcss/dot.css" /&gt;
+        </code>
+    </section>
+</page>
+
+<page dc-page="about" dc-include="pages/about.html"></page>
+<page dc-page="modules" dc-include="pages/modules.html" class="lnav"></page>
+
+</body>

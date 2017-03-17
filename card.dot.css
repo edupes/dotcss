@@ -1,0 +1,38 @@
+@media (min-width: 500px) {
+
+	.card {
+		width: calc(50% - 17px);
+		margin: 10px;
+		float: left;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+	
+	.card:nth-child(odd) {
+		margin-left: 5px
+	}
+	
+	.card:nth-child(even) {
+		margin-right: 5px
+	}
+	
+}
+
+
+.card {
+	border-bottom: 1px solid #ddd;
+}
+
+.card h1 {
+	padding: 20px;
+	margin: 0;
+	color: white;
+	font-weight: 400;
+	background: #088;
+	background: linear-gradient(0, #2aa, #088);
+}
+
+.card p {
+	padding: 20px;
+	margin: 0;
+}

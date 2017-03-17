@@ -1,0 +1,15 @@
+header {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(0, #22aaaa, #008888);
+    display: table;
+}
+
+header h1 {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 400;
+}
